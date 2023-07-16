@@ -12,6 +12,9 @@ CORS(app)
 
 DELAY = 0.1
 
+@app.route("/", methods=["GET"])
+def home():
+    return {"msg":"success"}
 
 @app.route("/coord", methods=["POST"])
 def coordinates():
